@@ -1,0 +1,26 @@
+{
+  "name": "nodeMongo",
+  "version": "1.0.0",
+  "description": "Node.js and MongoDb tutorial.",
+  "main": "Server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Node.js",
+    "mongoDb"
+  ],
+  "author": "Shahid Shaikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeforgeek/Node-and-mongo-tutorial/issues"
+  },
+  "homepage": "https://github.com/codeforgeek/Node-and-mongo-tutorial",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "~4.0.0",
+    "mongoose": "^5.0.12",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.12.5"
+  }
+}
