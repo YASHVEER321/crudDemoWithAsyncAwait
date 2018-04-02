@@ -8,7 +8,7 @@ CrudOp.getUser = async (req, res) => {
     console.log("USER GET");
     try {
         var response = {};
-        let value = await usermongo.find({ _id: "5abe07643a9d7b08ac1cbd88" })
+        let value = await usermongo.find({ })
         if (value.length > 0) {
             res.status(200).json({
                 value: value
