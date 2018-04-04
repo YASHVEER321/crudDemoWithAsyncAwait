@@ -35,6 +35,8 @@ router.get("/", function (req, res) {
 app.use('/api', router);
 
 // console.log("-- server.js ends! -- ");
+
+
 const cluster = require('cluster')
 cpu = 4
 if (cluster.isMaster) {
@@ -52,14 +54,6 @@ let usermongo = require("./models/user")
 //     console.log("check ",i)
 //     savedata(i)
 // }
-let arr=[]
-if(arr.length){
-    console.log("check len",arr)
-}
-else{
-    console.log("check ",arr)
-
-}
 
 
 async function savedata(i) {
