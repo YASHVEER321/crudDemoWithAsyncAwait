@@ -4,15 +4,25 @@ const express = require("express"),
 
 let CrudOp = {};
 
+CrudOp.test = async (req, callback) => {
+    let value = await usermongo.find({})
+    return (value)
+}
+
 CrudOp.getUser = async (req, res) => {
     console.log("USER GET");
     try {
         var response = {};
-        let value = await usermongo.find({ })
+        let value = await usermongo.find({})
         if (value.length > 0) {
-            res.status(200).json({
-                value: value
-            });
+            let value2 = CrudOp.test().then
+                (text => {
+                    res.status(200).json({
+                        value: value,
+                        value2: text
+                    });
+                })
+
         }
         else {
             res.status(401).json({
@@ -21,8 +31,9 @@ CrudOp.getUser = async (req, res) => {
         }
     }
     catch (err) {
+        console.log("In error part ", err)
         res.status(500).json({
-            value: value
+            Error: err
         });
     }
 

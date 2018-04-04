@@ -52,6 +52,14 @@ let usermongo = require("./models/user")
 //     console.log("check ",i)
 //     savedata(i)
 // }
+let arr=[]
+if(arr.length){
+    console.log("check len",arr)
+}
+else{
+    console.log("check ",arr)
+
+}
 
 
 async function savedata(i) {
